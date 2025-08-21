@@ -1,24 +1,10 @@
-import { useEffect } from 'react'
-import type { Gif } from '../../mock-data/gifs.mock'
+import type { Gif } from '../interfaces/gif.interface'
 
 interface Props {
     gifs: Gif[]
 }
 
 export const GifList = ({gifs}: Props) => {
-    const giphyUrl = import.meta.env.GIPHY_URL;
-    const giphyApiKey = import.meta.env.GIPHY_API_KEY;
-    const cantidad = 10;
-    const url = `${giphyUrl}/trending?api_key=${giphyApiKey}&limit=${cantidad}`;
-    useEffect(() => {
-        const response = fetch(url, {
-            method: 'GET',
-        });
-
-        const data = await 
-        
-    }, [])
-
   return (
     <div className="gifs-container">
             {
