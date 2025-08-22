@@ -1,10 +1,18 @@
 export interface GiphyResponse {
+<<<<<<< HEAD
     data:       GiphyGif[];
+=======
+    data:       Datum[];
+>>>>>>> daf227fe464b66fe9653c32dd361f6673c96cf12
     meta:       Meta;
     pagination: Pagination;
 }
 
+<<<<<<< HEAD
 export interface GiphyGif {
+=======
+export interface Datum {
+>>>>>>> daf227fe464b66fe9653c32dd361f6673c96cf12
     type:                       Type;
     id:                         string;
     url:                        string;

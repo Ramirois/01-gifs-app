@@ -1,10 +1,10 @@
-import type { Gif } from "../interfaces/gif.interface";
+import type { Gif } from '../interfaces/gif.interface'
 
 interface Props {
   gifs: Gif[];
 }
 
-export const GifList = ({ gifs }: Props) => {
+export const GifList = ({gifs}: Props) => {
   return (
     <div className="gifs-container">
       {gifs.map((gif) => (
